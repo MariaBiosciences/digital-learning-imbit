@@ -213,16 +213,16 @@
 			</div></div>></div>
 
 
-			<div style="text-align: left; width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; padding-bottom: 2%; height: 100%">
+			<div style="text-align: left; width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; padding-bottom: 2%; height: 300px">
                     <div style="width: 50%; float: left; padding-left: 5%">
                         <h4>Create New Group</h4>
 					<form action="NewUsergroup" method="post">
 						<div class="formLabel">Name:</div>
-						<input type="text" name="groupname" maxlength="50" required />
+						<input type="text" name="groupname" maxlength="50" required /><br /><br />
 						<div class="formLabel">Organisation:</div>
-						<input type="text" name="grouporg" maxlength="50" required />
+						<input type="text" name="grouporg" maxlength="50" required /><br /><br />
 						<div class="formLabel">Description:</div>
-						<input type="text" name="groupdescription" maxlength="50" required />
+						<input type="text" name="groupdescription" maxlength="50" required /><br /><br />
 						<div class="formLabel">URL:</div>
 						<input type="text" name="groupurl" maxlength="50" required />
 						 <input
