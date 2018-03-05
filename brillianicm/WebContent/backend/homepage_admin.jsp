@@ -59,10 +59,11 @@
 			<a id="content" class="easyui-linkbutton" data-options="plain:true"><%=ApplicationConstants.CONTENT_BUTTON_TEXT%></a>
 		</div>
 	</div>
-	<div class="center mainWindow" data-options="region:'center'"
-		align="center">
-		<div
-			style="margin-top: 25px; padding-bottom: 25px; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 2%; text-align: left">
+	<div class="center mainWindow" data-options="region:'center'" align="center" style="padding-left: 5%; padding-right: 5%">
+	<h1>Admin Page</h1>
+		<div style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%" align="center">
+			<div class="separator-box" style="margin-bottom:20px">
+			<div style="padding-bottom: 20px; padding-left: 2%; width:80%; background-color: white; border-width:1px; border-style:solid; border-color:black; height: 100%">
 			<h4>Lecturers</h4>
 			<table id="students" class="easyui-datagrid" style="width: 600px"
 				data-options="fitColumns:true,singleSelect:true">
@@ -113,9 +114,10 @@
 					%>
 				</tbody>
 			</table>
+			</div></div>
 			<br />
 			<div
-				style="height: 370px; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 2%; text-align: left; padding-top: 20xp; padding-bottom: 20px">
+				style="height: 370px; width: 80%; background-color: white; border-width: 1px; border-style: solid; border-color: black; padding-left: 2%; text-align: left; padding-bottom: 20px">
 				<div style="height: 100%; width: 50%; float: left">
 					<h4>New Lecturer</h4>
 					<form action="CreateUser" method="post">

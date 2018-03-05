@@ -45,7 +45,7 @@
 			<h1>Lecturer Page</h1>
 			<br />
 			<div class="separator-box" style="padding-bottom: 30px">
-            <div style="width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; height: 100%">
+            <div style="width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black">
 			<div id="groupsOfProfessor" style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%">
 				<h4>Groups</h4>
 				Below, all existing groups are listed with their belonging students.
@@ -213,7 +213,7 @@
 			</div></div>></div>
 
 
-			<div style="text-align: left; width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; padding-bottom: 2%; height: 300px">
+			<div style="text-align: left; width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; padding-bottom: 2%">
                     <div style="width: 50%; float: left; padding-left: 5%">
                         <h4>Create New Group</h4>
 					<form action="NewUsergroup" method="post">
