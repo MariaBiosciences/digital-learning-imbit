@@ -59,14 +59,14 @@
         <div id="studentsOfProfessor">
 			<h1>Lecturer Page</h1>
             <br />
-            <div class="separator-box" style="padding-bottom: 30px">
-            <div style="width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; height: 100%">                 
+            <div class="separator-box" style="padding-bottom: 20px">
+            <div style="width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black">                 
 			<div id="groupsOfProfessor" style="width: 100%; text-align: left; padding-left: 5%; padding-right: 5%">
 				<h4>Groups</h4>
 				Below, all existing groups are listed with their belonging students.
 				<br />
 				<p style="color: blue">${status}</p>
-				<br /> <br />
+			
 				<%
 					if (request.getAttribute("groups") != null) {
 						//students = new String[((String [][]) request.getAttribute("students")).length][request.getAttribute("students")[0].length];
@@ -219,16 +219,23 @@
 			</div></div>></div>
 
 
-            <div style="text-align: left; width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; padding-bottom: 2%; height: 100%">
+            <div style="height: 300px; text-align: left; width: 80%; background-color: white; border-width:1px; border-style:solid; border-color:black; padding-bottom: 30px;margin-bottom: 30px">
                     <div style="width: 50%; float: left; padding-left: 5%">
                         <h4>Create New Group</h4>
 					<form action="NewUsergroup" method="post">
-						<div class="formLabel">name:</div>
-						<input type="text" name="groupname" maxlength="50" required /> <input
+						<div class="formLabel">Name:</div>
+						<input type="text" name="groupname" maxlength="50" required /><br /><br />
+						<div class="formLabel">Organisation:</div>
+						<input type="text" name="grouporg" maxlength="50" required /><br /><br />
+						<div class="formLabel">Description:</div>
+						<input type="text" name="groupdescription" maxlength="50" required /><br /><br />
+						<div class="formLabel">URL:</div>
+						<input type="text" name="groupurl" maxlength="50" required /> 
+						<input
 							type="submit" style="display: none" id="createGroup"
 							value="Create group" /><br /> <br /> <a
 							class="easyui-linkbutton"
-							onclick="$('#createGroup').trigger('click')">create group</a>
+							onclick="$('#createGroup').trigger('click')">Create group</a>
 						<p style="color: green">${success}</p>
 						<p style="color: red">${error}</p>
 					</form>
@@ -240,14 +247,14 @@
 							value="${username}" style="display: none" /> <input type="text"
 							name="role" maxlength="50" value="professor"
 							style="display: none" />
-						<div class="formLabel" style="padding-right: 20px">new password:</div>
+						<div class="formLabel" style="padding-right: 20px">New password:</div>
 						<input style="width: 200px" type="password" name="password" maxlength="50" /><br /> <br />
-						<div class="formLabel" style="padding-right: 20px">repeat new password:</div>
+						<div class="formLabel" style="padding-right: 20px">Repeat new password:</div>
 						<input style="width: 200px" type="password" name="password_repeat" maxlength="50" /><br />
 						<br /> <input id="updatePassword" type="submit"
 							name="updatePassword" value="Update password" hidden="hidden" />
 						<a class="easyui-linkbutton"
-							onclick="$('#updatePassword').trigger('click')">update
+							onclick="$('#updatePassword').trigger('click')">Update
 							password</a>
 					</form>
 				</div>
